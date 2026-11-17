@@ -47,7 +47,20 @@ export class Usuario {
             
         }
 
-        return new Usuario({ id: crypto.randomUUID().toString(), nome, email, senhaHash, criadoEm: new Date(),})
+        if (nome.length > 120) {
+            throw new Error('O nome deve ter no máximo 120 caracteres')
+        }
+
+        if (email.length > 254) {
+            throw new Error('O email deve ter no máximo 254 caracteres')
+        }
+
+        return new Usuario({ 
+            id: crypto.randomUUID().toString(), 
+            nome, 
+            email, 
+            senhaHash, 
+            criadoEm: new Date(),})
     }
 
     public static recriar (props : UsuarioProps) : Usuario {
