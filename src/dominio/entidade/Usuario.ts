@@ -35,6 +35,8 @@ export class Usuario {
         return this.props.atualizadoEm
     }
 
+
+
     public static criar (
     nome : string, 
     email : string,
@@ -63,6 +65,9 @@ export class Usuario {
             criadoEm: new Date(),})
     }
 
+
+
+    
     public static recriar (props : UsuarioProps) : Usuario {
         return new Usuario (props)
     }
