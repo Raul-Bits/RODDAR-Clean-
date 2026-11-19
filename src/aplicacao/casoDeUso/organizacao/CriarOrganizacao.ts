@@ -21,7 +21,7 @@ export class CriarOrganizacao {
         }
 
         
-        const organizacao = await this.Organizacao.criar(input.usuarioId, input.nome, input.tipo)
+        const organizacao = Organizacao.criar(input.usuarioId, input.nome, input.tipo)
 
         await this.organizacaoRepo.salvar(organizacao)
 
