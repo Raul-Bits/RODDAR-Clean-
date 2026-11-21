@@ -11,9 +11,12 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@types/node": "^26.6.5",
+    "@types/node": "^26.6.6",
     "ts-node": "^10.9.2",
     "tsc-alias": "^1.9.9",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "mysql2": "^3.24.6"
   }
 }

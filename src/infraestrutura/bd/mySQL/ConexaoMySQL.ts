@@ -5,4 +5,5 @@ export const conexao = mysql.createPool({
     user: 'root',
     password: '',
     database: 'roddarbd'
+    
 })

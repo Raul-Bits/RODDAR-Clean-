@@ -4,7 +4,7 @@ export type UsuarioProps = {
     email : string
     senhaHash : string
     criadoEm : Date
-    atualizadoEm ?: Date
+    atualizadoEm?: Date | undefined 
 
 }
 
