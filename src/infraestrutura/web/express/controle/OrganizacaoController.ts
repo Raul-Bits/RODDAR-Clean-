@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { CriarOrganizacao } from "../../aplicacao/casoDeUso/organizacao/CriarOrganizacao";
+import { CriarOrganizacao } from "../../../../aplicacao/casoDeUso/organizacao/CriarOrganizacao";
 
 export class OrganizacaoController {
     constructor (

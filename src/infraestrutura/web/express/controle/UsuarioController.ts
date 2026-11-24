@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
-import { CadastrarUsuario } from '../../aplicacao/casoDeUso/usuario/CadastrarUsuario'
-import { AutenticarUsuario } from '../../aplicacao/casoDeUso/usuario/AutenticarUsuario'
+import { CadastrarUsuario } from '../../../../aplicacao/casoDeUso/usuario/CadastrarUsuario'
+import { AutenticarUsuario } from '../../../../aplicacao/casoDeUso/usuario/AutenticarUsuario'
 
 export class UsuarioController {
     constructor(
